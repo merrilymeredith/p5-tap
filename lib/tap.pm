@@ -8,9 +8,16 @@ use strict;
 
   use tap;
 
-  my $o = Some::Class->new
+  return Some::Class->new
     ->tap::color('red')
     ->tap::smell('roses');
+
+  # rather than:
+
+  my $o = Some::Class->new;
+  $o->color('red')
+  $o->smell('roses');
+  return $o;
 
 =head1 DESCRIPTION
 

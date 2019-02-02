@@ -10,9 +10,16 @@ version 0.001
 
     use tap;
 
-    my $o = Some::Class->new
+    return Some::Class->new
       ->tap::color('red')
       ->tap::smell('roses');
+
+    # rather than:
+
+    my $o = Some::Class->new;
+    $o->color('red')
+    $o->smell('roses');
+    return $o;
 
 # DESCRIPTION
 
