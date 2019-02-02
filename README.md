@@ -1,6 +1,6 @@
 # NAME
 
-tap
+tap - add a tap method everywhere
 
 # VERSION
 
@@ -23,10 +23,6 @@ a method chain.
 
 This module gets you access to tap anywhere, without requiring it to exist in
 a parent class or an imported lexical.
-
-# NAME
-
-tap - add a tap method everywhere
 
 # METHODS
 

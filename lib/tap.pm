@@ -1,11 +1,8 @@
 package tap;
+# ABSTRACT: add a tap method everywhere
 
 use warnings;
 use strict;
-
-=head1 NAME
-
-tap - add a tap method everywhere
 
 =head1 SYNOPSIS
 
