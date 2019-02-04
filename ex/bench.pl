@@ -20,6 +20,11 @@ package Foo {
   sub finish {
     $_[0]->{finish} = $_[1];
   }
+  sub tap {
+    my ($self, $method) = (shift, shift);
+    $self->$method(@_);
+    $self;
+  }
 };
 
 # use DDP;
@@ -55,5 +60,10 @@ cmpthese 3_000_000, {
     $foo->color('pink');
     $foo->finish('matte');
     $foo
+  },
+  'own-tap' => sub {
+    Foo->new
+      ->tap(color => 'pink')
+      ->tap(finish => 'matte')
   },
 };
