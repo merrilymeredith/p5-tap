@@ -4,6 +4,9 @@ package tap;
 use warnings;
 use strict;
 
+use vars qw($AUTOLOAD);
+use constant PREFIX_LENGTH => length('tap::');
+
 =head1 SYNOPSIS
 
   use tap;
@@ -46,9 +49,9 @@ out the long way, but it's the fastest of all tap-like features I've seen.
 
 sub AUTOLOAD {
   my ($self, @args) = @_;
-  my $method = our $AUTOLOAD =~ s/^tap:://r
+  my $method = substr($AUTOLOAD, PREFIX_LENGTH())
     or return;
-  
+
   eval sprintf(<<'END_PERL', $method) unless $method eq 'tap';
     sub %1$s {
       my $self = shift;
