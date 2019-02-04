@@ -41,8 +41,11 @@ a parent class or an imported lexical.
 
 For use when you know what existing method you want to call.  This is
 implemented using AUTOLOAD, which follows the common behavior of installing
-a method so you only fall to AUTOLOAD once.  It's not as fast as writing things
-out the long way, but it's the fastest of all tap-like features I've seen.
+a method so you only fall to AUTOLOAD once.
+
+It's not as fast as writing things out the long way, but it's the fastest of
+all tap-like features I've seen.  And I think it's convenient while looking
+nice.  I was using it in [Reply](https://metacpan.org/pod/Reply) for quite a while before making it a module.
 
 ## tap::tap
 
