@@ -1,0 +1,12 @@
+0.01 2019-04-19T04:31:08
+ - init Changes (Meredith Howard)
+ - Docs (Meredith Howard)
+ - Update README.md (Meredith Howard)
+ - Add perf section (Meredith Howard)
+ - Add own-tap case (Meredith Howard)
+ - Lower min perl requirement to 5.6.0 (Meredith Howard)
+ - Show the alternative for clarity (Meredith Howard)
+ - Fix POD and README.md (Meredith Howard)
+ - Add README (Meredith Howard)
+ - Initial commit (Meredith Howard)
+ - initialize (Meredith Howard)
